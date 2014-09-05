@@ -1,0 +1,53 @@
+%%[ VAR @linkID, @memberID, @secretKey, @hashedStr, @linkURL SET @linkID = '354251195' SET @linkURL = 'http://www.swagbucks.com/g/l/5uwtyz' SET @memberID = SwagbucksMemberID SET @secretKey = 'ielb4m49dm249nk49gjt94gh0en05sd5ghjoibjpi1i' SET @hashedStr= SHA1(Concat(@linkID,@memberID,@secretKey)) ]%%
+<table cellspacing="0" cellpadding"0" border="0">
+	<tbody>
+		<tr>
+			<td align="center" style="padding: 10px 0px 0px 0px;">
+			<p style="margin: 0px; padding: 0px; color: #316cb1; font-family: sans-serif; font-size: 20px; font-weight: lighter; text-align: center;">
+			Hi %%FirstName_MD%%,
+			</p>
+			<p style="margin: 0px 60px 10px 60px; padding: 0px; color: #316cb1; font-family: sans-serif; font-size: 20px; font-weight: bold; text-align: center;">
+			Click on this email for an instant 2 SB and see an offer that can get you $15 in gift cards!
+			</p>
+			<p style="margin: 0px 40px 10px 40px; padding: 0px; color: #333; font-family: sans-serif; font-size: 12px; line-height: 18px; text-align: center;">
+			Deals like this are a quick way to earn your first gift card reward! Just sign up to get 10 Swag Bucks. Click “Purchase Tokens” at the top of the page and buy at least 75,000 tokens to earn 1,490 Swag Bucks.
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+				<tbody>
+					<tr>
+						<td>
+						<a href="%%=RedirectTo(Concat(@linkURL,'?h=',@hashedStr,'&memberid=',@memberID))=%%" target="_blank" style="text-decoration: none; border: none;">
+						<img src="http://image.swagbucksemail.com/lib/fe9312727767037575/m/1/WoFSlots.jpg" width="600" alt="Earn 10 SB when you sign up to play Wheel of Fortune Slots"/>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding: 10px 0px">
+						<img src="http://image.swagbucksemail.com/lib/fe9312727767037575/m/1/hline.png" width="548" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<table width="350" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tbody>
+								<tr>
+									<td align="left" style="padding-right: 20px;">
+									<img src="http://image.swagbucksemail.com/lib/fe9312727767037575/m/1/funFact.png" alt="Fun Fact"/>
+									</td>
+									<td style="color: #333; font-family: sans-serif; font-size: 14px; line-height: 22px;">
+									<strong>27%</strong> of our members say that they get newspapers only for the coupons.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>

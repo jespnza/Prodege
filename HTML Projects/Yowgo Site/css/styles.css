@@ -1,0 +1,392 @@
+/* ---------- RESET STYLES ---------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------- MAIN STYLES ---------- */
+body {
+	background: #fff;
+	color: #000;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin:0 auto;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.logo {
+	float: left;
+	display: inline-block;
+	width: 130px;
+	height: 53px;
+	margin-left: 20px;
+}
+
+.logo a:link, a:visited {
+	border: none !important;
+}
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: block;
+	padding: 5px 0;
+	background: none;
+}
+	header.scrolled {
+		box-shadow: 0 5px 4px 1px rgba(0, 0, 0, .1);
+		background: #fff;
+	}
+
+	header #home a:link {
+		border: none !important;
+	}
+
+	header nav ul {
+		list-style: none;
+		display: inline;
+		float: right;
+		margin: 25px 20px auto auto;
+	}
+
+	header nav ul li {
+		display: inline-block;
+		margin-left: 30px;
+		text-transform: uppercase;
+	}
+
+	header nav ul li a:link, a:visited, a:hover, a:active {
+		color: #000;
+		text-decoration: none;
+	}
+
+	header nav li a, header a {
+		font-weight: 300;
+		color: #000;
+		text-decoration: none;
+		font-size: 16px;
+		padding: 7px 10px;
+		border: 1px solid #fff;
+		border-radius: 12px;
+	}
+
+	header nav li a:visited {
+		color: #000;
+		text-decoration: none;
+	}
+
+	header nav li a:hover, html body header a.current {
+		border: 1px solid #1074b9;
+		border-radius: 12px;
+	}
+
+	header nav li a:active {
+		background: #1074b9;
+		color: #fff !important;
+	}
+
+section {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+aside {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+section#masthead {
+	background: url("../images/masthead_image2.jpg") scroll center center no-repeat;
+	height: 580px;
+	max-height: 580px;
+	background-size: 100%;
+}
+
+	section#masthead h1 {
+		padding-top: 200px;
+		font-size: 44px !important;
+		margin-bottom: 20px;
+	}
+
+	aside#partnerships {
+		background: #f8f8f8;
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	aside#partnerships ul {
+		display: inline;
+		list-style: none;
+		margin-top: 30px;
+	}
+
+	aside#partnerships ul li {
+		display: inline-block;
+		margin: 0 40px;
+	}
+
+	aside#partnerships h2 {
+		margin-top: 30px;
+	}
+
+	.aol {
+		width: 200px;
+		height: 180px;
+		background: url("../images/yowgo-sprite.png") 0px -300px;
+	}
+
+	.hulu {
+		width: 200px;
+		height: 180px;
+		background: url("../images/yowgo-sprite.png") -200px -300px;
+	}
+
+	.vevo {
+		width: 200px;
+		height: 180px;
+		background: url("../images/yowgo-sprite.png") -400px -300px;
+	}
+
+section#benefits {
+	padding-top: 50px;
+	height: 839px;
+	background: url("../images/collage.png") center 180px no-repeat;
+}
+
+	section#benefits h2 {
+		max-width: 580px;
+	}
+
+	aside#specs {
+		background: #323232;
+		width: 100%;
+		padding: 50px 0;
+	}
+
+	aside#specs ul {
+		display: inline-block;
+		list-style: none;
+		color: #fff;
+		font-size: 40px;
+	}
+
+	aside#specs li {
+		float: left;
+		width: 280px;
+		margin: 10px;
+	}
+
+	aside#specs .members {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		background: url("../images/yowgo-sprite.png") -200px 0px no-repeat;
+	}
+
+	aside#specs .income {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		background: url("../images/yowgo-sprite.png") -300px 0px no-repeat;
+	}
+
+	aside#specs .videos {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		background: url("../images/yowgo-sprite.png") -400px 0px no-repeat;
+	}
+
+section#platforms {
+	padding: 50px 0;
+	height: 632px;
+}
+
+	#carousel {
+		width: 980px;
+	}
+
+	#carouselWindow {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 894px;
+		height: 596px;
+		overflow: hidden;
+		float: left;
+	}
+
+	#carouselHero {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.carouselItem {
+		float: left;
+	}
+
+	.carousel {
+		width: 980px;
+		margin: 0 auto;
+	}
+
+	.carouselNav {
+		width: 40px;
+		height: 40px;
+		float: left;
+		margin-top: 225px;
+		cursor: pointer;
+	}
+
+	#brands {
+			background: rgba(51,51,51, .87);
+			padding: 0;
+			bottom: 20px;
+	}
+
+	#brands img {
+			margin: 0;
+	}
+
+section#insights {
+	padding: 50px 0;
+	height: 780px;
+}
+
+	#featureWrap {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	.item {
+		width: 280px;
+		padding: 10px;
+		margin: 0 10px;
+		float: left;
+		text-align: center;
+	}
+	
+	.global {
+		width: 200px;
+		height: 180px;
+		background: url("../images/yowgo-sprite.png") 0px -100px no-repeat;
+		margin: 0 auto;
+	}
+
+	.mobile {
+		width: 200px;
+		height: 180px;
+		background: url("../images/yowgo-sprite.png") -200px -100px no-repeat;
+		margin: 0 auto;
+	}
+
+	.social {
+		width: 200px;
+		height: 180px;
+		background: url("../images/yowgo-sprite.png") -400px -100px no-repeat;
+		margin: 0 auto;
+	}
+
+	.item p {
+		width: 180px;
+		margin: 10px auto;
+		line-height: 36px;
+	}
+
+section#contact {
+	background: #2681c0;
+	padding: 50px 0;
+}
+
+	section#contact h1 {
+		color: #fff;
+		margin-bottom: 30px;
+	}
+
+footer {
+	background: #fff;
+	text-align: center;
+	padding: 30px 0;
+}
+
+strong {
+	font-weight: 400;
+}
+
+small {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.mkButton {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	transition: all .3s;
+}
+
+.clearFix {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.embed #container label.desc {
+	padding: 0 0 15px 0;
+	line-height: 100%;
+	font-size: 17px;
+	color: #fff !important;
+}

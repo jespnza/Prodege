@@ -1,0 +1,492 @@
+body {
+	background: #fff;
+	color: #000;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 16px;
+}
+	h1{
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 300;
+		margin: 0 auto 10px auto;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 36px;
+		font-weight: 300;
+		margin: 0 auto 20px auto;
+		text-align: center;
+	}
+	header {
+		width: 100%;
+		padding: 30px 0;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-weight: 300;
+		background: #fff;
+		position: fixed;
+		display: block;
+		height: 30px;
+	}
+		header img {
+			margin-left: 30px;
+		}
+		header nav {
+			list-style: none;
+			float: right;
+			padding: 0;
+			margin-top: 5px;
+		}
+			header nav li {
+				display: inline;
+				margin: 0 20px 0 0;	
+			}
+				header nav li a:link {
+					font-weight: 300;
+					color: #000;
+					text-decoration: none;
+					font-size: 16px;
+					width: 196px;
+					height: 22px;
+					padding: 10px;
+					border:  1px solid #fff;
+					border-radius: 12px;						
+				}
+				header nav li a:visited {
+					font-weight: 300;
+					color: #000;
+					text-decoration: none;
+					border:  1px solid #fff;
+					border-radius: 12px;
+					padding: 10px;
+				}
+				header nav li a:hover {
+					border:  1px solid #92bc3e;
+					background: #fff;
+					border-radius: 12px;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: 300;
+					color: #000;
+				}
+				header nav li a:active {
+					background: #92bc3e;
+					font-weight: 300;
+					color: #fff;
+					text-decoration: none;
+				}
+	main {
+		margin: 0 auto;
+	}
+	section {
+		text-align: center;
+		padding: 40px 0 0 0;
+	}
+		section a:link{
+			border:  1px solid #92bc3e;
+			background: #fff;
+			width: 196px;
+			height: 22px;
+			padding:  10px;	
+			border-radius: 12px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 300;
+			color: #000;
+			margin-top: 10px;
+		}
+		section a:visited{
+			border:  1px solid #92bc3e;
+			color: #000;
+			width: 196px;
+			margin-top: 10px;
+		}
+		section a:hover{
+			border:  1px solid #92bc3e;
+			background: #92bc3e;
+			color: #fff;		
+		}
+		section a:active{
+			border:  1px solid #92bc3e;		
+		}
+	.details {
+		padding:  40px 0;
+		background: #fff;
+		vertical-align: top;
+	}
+	section#hero {
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+		background: #ffffff;
+		/* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #cfcfcf 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cfcfcf)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#cfcfcf 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#cfcfcf 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#cfcfcf 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#cfcfcf 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfcfcf',GradientType=0 ); /* IE6-9 */
+		padding-top: 100px;
+	}
+		section#hero h1 {
+			max-width: 420px;
+		}
+		section#hero h2 {
+			max-width: 780px;
+		}
+		section#hero img.devices {
+			width: 100%;
+			max-width: 791px;
+		}
+		section#advertise {
+			font-size: 24px;
+			background: #fff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #cfcfcf 1%, #ffffff 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#cfcfcf), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #cfcfcf 1%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #cfcfcf 1%,#ffffff 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #cfcfcf 1%,#ffffff 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #cfcfcf 1%,#ffffff 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		}
+			section#advertise h1 {
+				font-size: 30px;
+				line-height: 36px;
+				font-weight: 400;
+			}
+			section#advertise h2 {
+				max-width: 780px;
+			}
+			.carousel {
+				width: 960px;
+				margin: 0 auto;
+			}
+				.carouselNav {
+					width: 40px;
+					height: 40px;
+					float: left;
+					margin-top: 225px;
+				}
+					.carouselNav a:link {
+						width: 40px;
+						height: 40px;
+						text-decoration: none;
+						border: none;
+						padding: 0;
+						margin: 0;
+						background: none;
+					}
+					.carouselNav a:visited {
+						width: 40px;
+						height: 40px;
+						text-decoration: none;
+						border: none;
+						padding: 0;
+						margin: 0;
+						background: none;
+					}
+					.carouselNav a:hover {
+						width: 40px;
+						height: 40px;
+						text-decoration: none;
+						border: none;
+						padding: 0;
+						margin: 0;
+						background: none;
+					}
+					.carouselNav a:active {
+						width: 40px;
+						height: 40px;
+						text-decoration: none;
+						border: none;
+						padding: 0;
+						margin: 0;
+						background: none;
+					}
+				ul.carouselHero{
+					width: 880px;
+					height: 450px;
+					float:  left;
+					margin: 0;
+					overflow: hidden;
+				}
+					ul.carouselHero li {
+						width: 880px;
+						height: 450px;
+						display: inline;
+					}
+	section#research{
+		background: #33a4c4;
+	}
+		section#research h1 {
+		margin-bottom: 10px;
+		color: #ffffff !important;
+		}
+		section#research section.audienceWrap {
+			max-width: 960px;
+			margin:  0 auto;
+		}
+		section#research .audiencePoint {
+			width: 280px;
+			height: 300px;
+			padding: 0 10px;
+			margin: 0 10px;
+						vertical-align: top;
+			float: left;
+		}
+			.audiencePoint img {
+				margin: 20px 0;
+			}
+			.audiencePoint h2 {
+				font-size: 40px;
+				color: #fff;
+				margin-bottom: 20px;
+			}
+			.audiencePoint h3 {
+				color: #fff;
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			.audiencePoint p {
+				color: #fff;
+				font-size: 20px;
+				font-weight: 300;
+			}
+			.multiData {
+				width: 180px;
+				margin:  0 auto;
+			}
+			.femalePoint {
+				float:  left;
+				margin-right: 10px;
+			}
+			.malePoint {
+				float:  right;
+				margin-left:  10px;
+			}
+	section#benefits {
+		width: 100%;
+	}
+		section#benefits .benefitsWrap {
+			max-width: 960px;
+			padding: 20px 0 40px 0;
+			margin: 0 auto;
+		}
+		section#benefits h1 {
+			max-width: 510px;
+			margin: 0 auto;
+		}
+		section#benefits .benefitPoint {
+			width: 200px;
+			padding: 0 10px;
+			margin: 0px 10px;
+			float:  left;
+		}
+			section#benefits .benefitPoint h3 {
+				font-size: 24px;
+				line-height: 36px;
+			}
+			section#benefits .benefitPoint p {
+				font-size: 16px;
+				line-height: 36px;
+				font-weight: 300;
+			}
+			section#benefits .benefitPoint img {
+			}		
+	section#contact {
+		padding: 40px 0;
+		background: #e2e2e2;
+	}
+		section#contact form {
+			margin: 0 auto;
+		}
+		section#contact input {
+			width: 438px;
+			padding: 10px;
+			border-radius: 6px;
+			border: none;
+			font-family: 'Lato', Helvetica, sans-serif;
+			font-size: 18px;
+			font-weight: 300;
+			display: block;
+			margin: 25px auto;
+		}
+		section#contact .submit {
+			font-weight: 300;
+			color: #000;
+			width: 255px;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 10px;
+			border:  1px solid #92bc3e;
+			border-radius: 12px;
+			background: #e2e2e2;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		section#contact .submit:hover {
+			font-weight: 300;
+			color: #fff;
+			width: 255px;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 10px;
+			border:  1px solid #92bc3e;
+			border-radius: 12px;
+			background: #92bc3e;
+			text-transform: uppercase;
+		}
+strong {
+	font-weight: 400;
+}
+footer{
+	background: #fff;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+	footer p {
+		text-align: center;
+		font-weight: 300;
+		margin:  20px auto;
+	}
+.clearFix {
+	clear: both;
+	margin: 0;
+}
+.current {
+	border:  1px solid #92bc3e;
+	background: #fff;
+	border-radius: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #000;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+/* ---------- PHONES ---------- */
+@media only screen and (max-width: 767px) {
+
+	
+	h1 {
+		font-size:  24px;
+		padding: 0 20px;
+	}
+	h2 {
+		font-size: 18px;
+		padding: 0 20px;
+	}
+
+	header {
+		width: 100%;
+		padding: 20px 0;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-weight: 300;
+		background: #fff;
+		display: block;
+		text-align: center;
+		border-bottom: 5px solid #ddd;
+	}
+		header img {
+			margin: 0;
+		}
+		header nav {
+			list-style: none;
+			padding: 0;
+			float: none;
+			visibility: hidden;
+		}
+		.carousel {
+			width: 100%;
+			margin: 0 auto;
+		}
+			.carouselNav {
+				width: 40px;
+				height: 40px;
+				float: left;
+				margin-top: 225px;
+				visibility: hidden;
+				display: none;
+			}
+				.carouselNav a:link {
+					width: 40px;
+					height: 40px;
+					text-decoration: none;
+					border: none;
+					padding: 0;
+					margin: 0;
+					background: none;
+				}
+				.carouselNav a:visited {
+					width: 40px;
+					height: 40px;
+					text-decoration: none;
+					border: none;
+					padding: 0;
+					margin: 0;
+					background: none;
+				}
+				.carouselNav a:hover {
+					width: 40px;
+					height: 40px;
+					text-decoration: none;
+					border: none;
+					padding: 0;
+					margin: 0;
+					background: none;
+				}
+				.carouselNav a:active {
+					width: 40px;
+					height: 40px;
+					text-decoration: none;
+					border: none;
+					padding: 0;
+					margin: 0;
+					background: none;
+				}
+			ul.carouselHero{
+				width: 100%;
+				margin: 0;
+				overflow: hidden;
+				height: 200px;
+			}
+				ul.carouselHero li {
+					display: inline;
+					width: 100%;
+					max-width: 791px;
+				}
+					ul.carouselHero img {
+						width: 100%;
+						max-width: 791px;
+					}
+	section#research .audiencePoint {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		vertical-align: top;
+	}
+	.multiData {
+		width: 320px;
+		margin:  0 auto;
+	}
+	.femalePoint {
+		float:  left;
+		margin-right: 10px;
+	}
+	.malePoint {
+		float:  right;
+		margin-left:  10px;
+	}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}

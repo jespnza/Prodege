@@ -1,0 +1,27 @@
+%%[ VAR @linkID, @memberID, @secretKey, @hashedStr, @linkURL SET @linkID = '1693617296' SET @linkURL = 'http://www.swagbucks.com/g/l/s0c3gw' SET @memberID = SwagbucksMemberID SET @secretKey = 'ielb4m49dm249nk49gjt94gh0en05sd5ghjoibjpi1i' SET @hashedStr= SHA1(Concat(@linkID,@memberID,@secretKey)) ]%%
+<table align="center" cellspacing="0" cellpadding="20" border="0">
+	<tbody>
+		<tr>
+			<td align="center" style=" padding: 20px 40px; color: #333; font-family: sans-serif; font-size: 20px; line-height: 32px;">
+Members who take the Daily Poll earn 2x more SBs than others! Which are you, <font size="5"><strong>%%FirstName_MD%%</strong></font>?
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="padding: 20px;">
+			<a href="%%=RedirectTo(Concat(@linkURL,'?h=',@hashedStr,'&memberid=',@memberID))=%%" style="border: none; text-decoration: none;"><img src="http://image.swagbucksemail.com/lib/fe9312727767037575/m/1/winback-icon_dailypoll.png" alt="Swagbucks Daily Poll"/></a>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="padding: 20px 40px; color: #333; font-family: sans-serif; font-size: 20px; line-height: 32px;">
+			And today we're giving you an instant <font size="5"><strong>2 SB bonus </strong></font> just to click below and take the Daily Poll!
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="padding: 40px 20px 20px 20px;">
+			<a href="%%=RedirectTo(Concat(@linkURL,'?h=',@hashedStr,'&memberid=',@memberID))=%%" style="border: none; text-decoration: none;">
+			<img src="http://image.swagbucksemail.com/lib/fe9312727767037575/m/1/winback-btn-answer.png" alt="Answer Now" style="text-decoration: none; border: none;" />
+			</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
